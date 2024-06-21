@@ -32,7 +32,7 @@
   </div>
 </div>
 <?php 
-require_once "../conn_sqlsrv.php";
+require_once "conn_sqlsrv.php";
 
 // Menentukan direktori
 $dir = "uploads/";
