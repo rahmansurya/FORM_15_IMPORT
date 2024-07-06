@@ -32,7 +32,7 @@
   </div>
 </div>
 <?php 
-require_once "conn_sqlsrv.php";
+require_once "../conn_sqlsrv.php";
 
 // Menentukan direktori
 $dir = "uploads/";
@@ -75,15 +75,14 @@ echo "
         if ($row['count'] > 0) {
 			echo "<a href='?page=proses&filename=$filename'>$filename - $periode</a> <i class='fa fa-check-square' style='color:green;'></i><br>";
         } else {
-            echo "<a href='?page=proses&filename=$filename'>$filename - $periode</a> <i class='fa fa-window-close-o' style='color:red;'></i><br>";
+            echo "<a href='?page=proses&filename=$filename'>Klik Untuk Proses - $filename - $periode</a> <i class='fa fa-window-close-o' style='color:red;'></i><br>";
         }
 echo "
 		</div>   
   </div>
 </div>
 ";	
-		
-		
+
     }
 }
 
